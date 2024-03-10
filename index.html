@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-ZYTY8FG9L9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-ZYTY8FG9L9");
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
@@ -14,6 +29,7 @@
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>Document</title>
   </head>
+
   <body>
     <main class="container">
       <h1>AI Recipe Generator 🥘</h1>
@@ -29,10 +45,11 @@
             class="instructions"
             id="user-instructions"
           />
-          <input type="submit" value="Submit" class="submit-button" />
+          <input type="submit" value="Create Recipe" class="submit-button" />
         </form>
         <div class="hints">
-          i.e. western cuisine, french pastries, japanese desserts
+          💡i.e. You may enter a type of cuisine, list down the ingredients you
+          have in your fridge, or enter new ideas to create a fusion cuisine.
         </div>
       </section>
 
